@@ -15,27 +15,30 @@ a{
     text-decoration: none;
     color: white;
 }
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 section {
     background: #242424;
     color: white;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     height: 90vh;
-    padding: 4em 2em 2em 2em;
+    padding: 10vh 2em 2em 2em;
 }
 
 .title {
-
     h1 {
         font-size: 2em;
     }
-
     p {
         color: #C5C5C5;
         letter-spacing: .2em;
@@ -46,7 +49,9 @@ section {
 .nav-container {
     background: #393939;
     padding: 2em;
+    position: -webkit-sticky; /* Safari */
     position: fixed;
+    top: 0;
     width: 100%;
     box-sizing: border-box;
     z-index: 5;
@@ -72,10 +77,10 @@ section {
 
 }
 
-
 .social-header, .hero-design, .black_tortoid, .black_cube {
     display: none;
 }
+
 
 .hero {
     background: #242424;
@@ -84,7 +89,7 @@ section {
     place-content: center;
     text-align: center;
     height: 90vh;
-    padding: 4em 2em 2em 2em;
+    padding: 10vh 2em 2em 2em;
 
     p {
         color: #C5C5C5;
@@ -99,6 +104,7 @@ section {
 .featured {
     background: #5E416B;
     text-align: center;
+    height: auto;
     padding: 2em;
 
     .subtitle {
@@ -119,14 +125,10 @@ section {
     }
 
     .featured-desc {
-        font-size: .85em;
         line-height: 2em;
         color: #C5C5C5;
     }
 
-    .right {
-        padding: 0 2em;
-    }
     img {
         max-height: 15em;
         box-shadow: .2em .2em .5em black;
@@ -161,18 +163,6 @@ section {
         }
     }
 
-    li:hover {
-
-        img {
-            display: none;
-        }
-
-        .skill_title {
-            display: unset;
-
-        }
-    }
-
     .bottom {
         padding: 2em;
         
@@ -180,13 +170,26 @@ section {
             color: #C5C5C5;
             font-weight: bold;
             letter-spacing: .2em;
+            margin-bottom: 2em;
         }
+
         a {
             color: white;
             font-weight: bold;
             background: rgba(255, 255, 255, 0.3);
             border-radius: 2em;
             padding: 1em;
+        }
+    }
+
+    li:hover {
+        img {
+            display: none;
+        }
+
+        .skill_title {
+            display: unset;
+
         }
     }
 }
@@ -208,10 +211,11 @@ section {
 
 
 .contact {
-
+    .contact-form {
+        width: 70%;
+    }
     label {
         color: #C5C5C5;
-        font-size: .85em;
         display: block;
         text-align: left;
         padding: .8em .2em .2em .2em;
@@ -219,7 +223,6 @@ section {
 
     input[type=text], input[type=email], textarea {
         border-radius: .5em;
-        font-family: 'Poppins';
         width: 100%;
         padding: 1em;
         box-sizing: border-box;
@@ -274,7 +277,9 @@ footer {
 @media only screen and (min-width: 800px) {
     .featured, .skills, .about, .contact {
         text-align: left;
+        height: auto;
     }
+
 
     .nav-container {
         display: flex;
@@ -352,6 +357,10 @@ footer {
         margin-top: -4em;
         z-index: 1;
 
+        .title {
+            width: 100%;
+        }
+
         .black_tortoid {
             display: unset;
             position: absolute;
@@ -369,10 +378,16 @@ footer {
 
 
     .about {
-        display: grid;
-        grid-template-columns: 60% auto;
-        
+        position: relative;
+                
+        .title {
+            width: 100%;
+        }
 
+        .container {
+            display: grid;
+            grid-template-columns: 60% auto;
+        }
         .left{
             display: grid;
             place-content: center;
@@ -386,8 +401,10 @@ footer {
 
             img {
                 max-width: 100%;
-                height: auto;
                 cursor: pointer;
+                position: absolute;
+                bottom: 50%;
+                transform: translate(0, 25%);
             }
         }
         
@@ -397,6 +414,9 @@ footer {
         position: relative;
         z-index: 2;
 
+        .title {
+            width: 100%;
+        }
         .black_cube {
             display: unset;
             position: absolute;
@@ -406,9 +426,6 @@ footer {
             left: -2em;
         }
 
-        .contact-form {
-            padding: 0 10vw;
-        }
 
         .split {
             display: flex;
