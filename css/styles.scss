@@ -20,6 +20,16 @@ img {
     max-width: 100%;
 }
 
+section {
+    background: #242424;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    height: 90vh;
+    padding: 4em 2em 2em 2em;
+}
+
 .title {
 
     h1 {
@@ -36,6 +46,10 @@ img {
 .nav-container {
     background: #393939;
     padding: 2em;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 5;
 
     header {
         display: flex;
@@ -59,8 +73,6 @@ img {
 }
 
 
-
-
 .social-header, .hero-design, .black_tortoid, .black_cube {
     display: none;
 }
@@ -69,9 +81,10 @@ img {
     background: #242424;
     color: white;
     display: grid;
+    place-content: center;
     text-align: center;
-    padding: 2em;
-
+    height: 90vh;
+    padding: 4em 2em 2em 2em;
 
     p {
         color: #C5C5C5;
@@ -122,10 +135,6 @@ img {
 }
 
 .skills {
-    background: #242424;
-    color: white;
-    text-align: center;
-    padding: 2em;
     
     ul {
         display: flex;
@@ -184,10 +193,6 @@ img {
 
 .about {
     background: #5F5F5F;
-    color: white;
-    text-align: center;
-    padding: 2em;
-
 
     .desc {
         font-size: .85em;
@@ -203,10 +208,6 @@ img {
 
 
 .contact {
-    background: #242424;
-    color: white;
-    text-align: center;
-    padding: 2em;
 
     label {
         color: #C5C5C5;
@@ -233,7 +234,7 @@ img {
         border: none;
         border-radius: 2em;
         margin-top: 1em;
-        padding: 1em;
+        padding: 1em 2em;
         font-weight: bold;
         cursor: pointer;
     }

@@ -20,6 +20,17 @@ img {
   max-width: 100%;
 }
 
+section {
+  background: #242424;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 90vh;
+  padding: 4em 2em 2em 2em;
+}
+
 .title h1 {
   font-size: 2em;
 }
@@ -33,6 +44,11 @@ img {
 .nav-container {
   background: #393939;
   padding: 2em;
+  position: fixed;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 5;
 }
 
 .nav-container header {
@@ -69,8 +85,10 @@ img {
   color: white;
   display: -ms-grid;
   display: grid;
+  place-content: center;
   text-align: center;
-  padding: 2em;
+  height: 90vh;
+  padding: 4em 2em 2em 2em;
 }
 
 .hero p {
@@ -119,13 +137,6 @@ img {
   max-height: 15em;
   -webkit-box-shadow: .2em .2em .5em black;
           box-shadow: .2em .2em .5em black;
-}
-
-.skills {
-  background: #242424;
-  color: white;
-  text-align: center;
-  padding: 2em;
 }
 
 .skills ul {
@@ -187,9 +198,6 @@ img {
 
 .about {
   background: #5F5F5F;
-  color: white;
-  text-align: center;
-  padding: 2em;
 }
 
 .about .desc {
@@ -202,13 +210,6 @@ img {
   border-radius: 50%;
   -webkit-box-shadow: .2em .2em .5em black;
           box-shadow: .2em .2em .5em black;
-}
-
-.contact {
-  background: #242424;
-  color: white;
-  text-align: center;
-  padding: 2em;
 }
 
 .contact label {
@@ -237,7 +238,7 @@ img {
   border: none;
   border-radius: 2em;
   margin-top: 1em;
-  padding: 1em;
+  padding: 1em 2em;
   font-weight: bold;
   cursor: pointer;
 }
