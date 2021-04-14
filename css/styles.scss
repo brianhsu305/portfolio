@@ -113,7 +113,11 @@ img {
         color: #C5C5C5;
     }
 
+    .right {
+        padding: 0 2em;
+    }
     img {
+        max-height: 15em;
         box-shadow: .2em .2em .5em black;
     }
 
@@ -175,7 +179,6 @@ img {
             font-weight: bold;
             background: rgba(255, 255, 255, 0.3);
             border-radius: 2em;
-            font-size: .85em;
             padding: 1em;
         }
     }
@@ -187,9 +190,6 @@ img {
     text-align: center;
     padding: 2em;
 
-    h1 {
-        font-size: 2em;
-    }
 
     .desc {
         font-size: .85em;
@@ -210,15 +210,12 @@ img {
     text-align: center;
     padding: 2em;
 
-    h1 {
-        font-size: 2em;
-    }
-
     label {
         color: #C5C5C5;
         font-size: .85em;
         display: block;
         text-align: left;
+        padding: .8em .2em .2em .2em;
     }
 
     input[type=text], input[type=email], textarea {
@@ -227,10 +224,7 @@ img {
         width: 100%;
         padding: 1em;
         box-sizing: border-box;
-    }
-
-    input[type=text], input[type=email] {
-        height: 1.5em;
+        border: none;
     }
     
     input[type=button] {
@@ -240,8 +234,8 @@ img {
         color: black;
         border: none;
         border-radius: 2em;
+        margin-top: 1em;
         padding: 1em;
-        font-size: .85em;
         font-weight: bold;
         cursor: pointer;
     }
@@ -346,6 +340,9 @@ footer {
         }
         .right {
             z-index: 2;
+            img {
+                max-height: 100%;
+            }
         }
     }
 
@@ -358,7 +355,8 @@ footer {
             display: unset;
             position: absolute;
             z-index: -1;
-            width:  20em;
+            min-width: 20em;
+            max-width:  25em;
             right: 5em;
             top: 5em;
 
@@ -406,8 +404,14 @@ footer {
             top: -2em;
             left: -2em;
         }
+
+        .contact-form {
+            padding: 0 10vw;
+        }
+
         .split {
             display: flex;
+            gap: 1em;
 
             .left, .right {
                 flex-grow: 1;
@@ -427,6 +431,19 @@ footer {
     .nav-container, .hero, .featured, .skills, .about, .contact {
         padding: 2em 6em;
     }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .featured a, .skills h1, .about h1, .contact h1 {
+        font-size: 2.5em;
+    }
+
+    .featured .subtitle {
+        font-size: 1.5em;
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
