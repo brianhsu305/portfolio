@@ -240,6 +240,7 @@ section {
         padding: 1em 2em;
         font-weight: bold;
         cursor: pointer;
+        -webkit-appearance: none;
     }
 }
 
@@ -265,6 +266,7 @@ footer {
         ul {
             display: flex;
             width: 10em;
+            
             a {
                 display: block;
                 padding: .7em;

@@ -257,6 +257,7 @@ section {
   padding: 1em 2em;
   font-weight: bold;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 footer {
