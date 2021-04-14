@@ -13,6 +13,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 img {
@@ -57,10 +58,6 @@ img {
 .nav-container header ul a {
   display: block;
   padding: 0 .5em;
-}
-
-.nav-container a {
-  color: white;
 }
 
 .social-header, .hero-design, .black_tortoid, .black_cube {
@@ -309,13 +306,12 @@ footer .social-header ul a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     gap: 1em;
+  }
+  .nav-container .social-header ul a {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
   }
   .nav-container .social-header ul img {
     width: 1em;
@@ -454,11 +450,66 @@ footer .social-header ul a {
   .featured .subtitle {
     font-size: 1.5em;
   }
+  .nav-container a {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
   .nav-container, .hero, .featured, .skills, .about, .contact {
     padding: 2em 8em;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, 26px);
+            transform: translate(0px, 26px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, 26px);
+            transform: translate(0px, 26px);
+  }
+}
+
+.black_tortoid, .black_cube {
+  animation: floatAnim 2s infinite alternate-reverse;
+}
+
+@-webkit-keyframes floatAnim {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+  }
+}
+
+@keyframes floatAnim {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
   }
 }
 /*# sourceMappingURL=styles.css.map */

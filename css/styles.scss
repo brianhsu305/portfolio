@@ -13,6 +13,7 @@ ul {
 }
 a{
     text-decoration: none;
+    color: white;
 }
 
 img {
@@ -55,9 +56,6 @@ img {
         }
     }
 
-    a {
-        color: white;
-    }
 }
 
 
@@ -292,10 +290,12 @@ footer {
     
             ul {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
                 gap: 1em;
                 
+                a {
+                    display: grid;
+                    place-content: center;
+                }
                 img {
                     width: 1em;
                 }
@@ -444,10 +444,48 @@ footer {
         font-size: 1.5em;
     }
 
+    .nav-container {
+
+        a{
+            font-size: 1.5em;
+        }
+
+
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
     .nav-container, .hero, .featured, .skills, .about, .contact {
         padding: 2em 8em;
+    }
+}
+
+
+
+//Animation
+.circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(0px,0px);
+    }
+    to {
+        transform: translate(0px, 26px);
+    }
+}
+
+.black_tortoid, .black_cube {
+    animation: floatAnim 2s infinite alternate-reverse;
+}
+
+@keyframes floatAnim {
+    from {
+        transform: translate(0px,0px);
+    }
+    to {
+        transform: translate(0px, 30px);
     }
 }
