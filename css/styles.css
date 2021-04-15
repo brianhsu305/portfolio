@@ -165,6 +165,7 @@ section {
 
 .featured .featured-desc {
   line-height: 3em;
+  text-align: justify;
 }
 
 .featured .right {
@@ -263,7 +264,7 @@ section {
 .about .desc {
   color: var(--text-color-300);
   line-height: 2em;
-  font-size: 1.5rem;
+  text-align: justify;
 }
 
 .about img {
@@ -529,6 +530,12 @@ footer {
 @media only screen and (min-width: 1300px) {
   .nav-container, .hero, .featured, .skills, .about, .contact {
     padding: 2em 6em;
+  }
+  h1, .featured a {
+    font-size: 3rem;
+  }
+  header, p, label, input, textarea {
+    font-size: 1.2rem;
   }
 }
 
