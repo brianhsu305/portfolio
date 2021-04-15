@@ -39,7 +39,7 @@ img {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 p {
@@ -154,7 +154,7 @@ section {
 }
 
 .featured a {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: .1em;
 }
@@ -232,6 +232,7 @@ section {
   left: 0;
   right: 0;
   top: 2em;
+  text-align: center;
 }
 
 .skills .bottom p {
@@ -262,6 +263,7 @@ section {
 .about .desc {
   color: var(--text-color-300);
   line-height: 2em;
+  font-size: 1.5rem;
 }
 
 .about img {
@@ -297,7 +299,6 @@ section {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
-  font-size: 1.2rem;
 }
 
 .contact input[type=button] {
@@ -312,7 +313,6 @@ section {
   font-weight: bold;
   cursor: pointer;
   -webkit-appearance: none;
-  font-size: 1.2rem;
 }
 
 footer {
@@ -388,7 +388,6 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 10em;
   }
   .nav-container .social-header ul a {
     display: -ms-grid;
@@ -416,9 +415,6 @@ footer {
   .hero .left .content {
     text-align: left;
   }
-  .hero .left .content p {
-    font-size: 1.5rem;
-  }
   .hero .hero-design {
     display: unset;
     width: 60%;
@@ -432,23 +428,21 @@ footer {
   .featured {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 60% auto;
-        grid-template-columns: 60% auto;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
   }
   .featured .left {
     padding-right: 1em;
-    z-index: 3;
-  }
-  .featured .right {
-    z-index: 2;
   }
   .skills {
     position: relative;
-    margin-top: -4em;
     z-index: 1;
   }
   .skills .title {
     width: 100%;
+  }
+  .skills .content {
+    width: 50%;
   }
   .skills .black_tortoid {
     display: unset;
@@ -460,6 +454,7 @@ footer {
     top: 5em;
   }
   .skills .bottom {
+    margin-top: 3em;
     text-align: center;
   }
   .about {
@@ -471,12 +466,11 @@ footer {
   .about .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 60% auto;
-        grid-template-columns: 60% auto;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
   }
   .about .desc {
     padding: 2em 2em 2em 0;
-    font-size: 1.2rem;
   }
   .about .right {
     display: -webkit-box;
@@ -490,12 +484,8 @@ footer {
             justify-content: center;
   }
   .about .right img {
-    max-width: 100%;
+    width: 20em;
     cursor: pointer;
-    position: absolute;
-    bottom: 50%;
-    -webkit-transform: translate(0, 25%);
-            transform: translate(0, 25%);
   }
   .contact {
     position: relative;
@@ -539,18 +529,6 @@ footer {
 @media only screen and (min-width: 1300px) {
   .nav-container, .hero, .featured, .skills, .about, .contact {
     padding: 2em 6em;
-  }
-  h1 {
-    font-size: 3em;
-  }
-  .featured a, .skills h1, .about h1, .contact h1 {
-    font-size: 2.5em;
-  }
-  .featured .subtitle {
-    font-size: 1.5em;
-  }
-  .nav-container a {
-    font-size: 1.5em;
   }
 }
 

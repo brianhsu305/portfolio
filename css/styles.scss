@@ -40,7 +40,7 @@ img {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 p {
@@ -131,7 +131,7 @@ section {
     }
 
     a {
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-weight: bold;
         letter-spacing: .1em;
         &:hover {
@@ -203,6 +203,7 @@ section {
                     left: 0;
                     right: 0;
                     top: 2em;
+                    text-align: center;
                 }
             }
         }
@@ -242,6 +243,7 @@ section {
     .desc {
         color: var(--text-color-300);
         line-height: 2em;
+        font-size: 1.5rem;
     }
 
     img {
@@ -280,7 +282,6 @@ section {
         padding: .5em;
         box-sizing: border-box;
         border: none;
-        font-size: 1.2rem;
     }
     
     input[type=button] {
@@ -295,7 +296,7 @@ section {
         font-weight: bold;
         cursor: pointer;
         -webkit-appearance: none;
-        font-size: 1.2rem;
+
     }
 }
 
@@ -306,6 +307,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .social-header {
     display: flex;
     justify-content: center;
@@ -352,7 +354,6 @@ footer {
             ul {
                 display: flex;
                 justify-content: space-between;
-                width: 10em;
                 
                 a {
                     display: grid;
@@ -378,10 +379,6 @@ footer {
 
             .content {
                 text-align: left;
-
-                p {
-                    font-size: 1.5rem;
-                }
             }
         }
 
@@ -401,28 +398,25 @@ footer {
 
     .featured {
         display: grid;
-        grid-template-columns: 60% auto;
+        grid-template-columns: 40% auto;
 
 
         .left {
             padding-right: 1em;
-            z-index: 3;
         }
 
-        .right {
-
-            z-index: 2;
-        }
 
     }
 
     .skills {
         position: relative;
-        margin-top: -4em;
         z-index: 1;
 
         .title {
             width: 100%;
+        }
+        .content {
+            width: 50%;
         }
 
         .black_tortoid {
@@ -433,9 +427,10 @@ footer {
             max-width:  25em;
             right: 5em;
             top: 5em;
-
         }
+
         .bottom {
+            margin-top: 3em;
             text-align: center;
         }  
     }
@@ -450,12 +445,11 @@ footer {
 
         .container {
             display: grid;
-            grid-template-columns: 60% auto;
+            grid-template-columns: 50% auto;
         }
 
         .desc {
             padding: 2em 2em 2em 0;
-            font-size: 1.2rem;
         }
 
         .right {
@@ -465,11 +459,8 @@ footer {
             justify-content: center;
 
             img {
-                max-width: 100%;
+                width: 20em;
                 cursor: pointer;
-                position: absolute;
-                bottom: 50%;
-                transform: translate(0, 25%);
             }
         }
         
@@ -518,24 +509,6 @@ footer {
 @media only screen and (min-width: 1300px) {
     .nav-container, .hero, .featured, .skills, .about, .contact {
         padding: 2em 6em;
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    .featured a, .skills h1, .about h1, .contact h1 {
-        font-size: 2.5em;
-    }
-
-    .featured .subtitle {
-        font-size: 1.5em;
-    }
-
-    .nav-container {
-        a{
-            font-size: 1.5em;
-        }
     }
 
 }
