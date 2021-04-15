@@ -82,9 +82,12 @@ p {
             }
         }
     }
+    .social-header {
+        display: none;
+    }
 }
 
-.social-header, .black_tortoid, .black_cube {
+.black_tortoid, .black_cube {
     display: none;
 }
 
@@ -118,7 +121,7 @@ section {
 
 .featured {
     background: var(--second-accent-color-400);
-
+    
     .subtitle {
         color: var(--second-accent-color-300);
         font-weight: bold;

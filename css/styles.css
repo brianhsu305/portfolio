@@ -96,7 +96,11 @@ p {
   color: var(--main-accent-color-300);
 }
 
-.social-header, .black_tortoid, .black_cube {
+.nav-container .social-header {
+  display: none;
+}
+
+.black_tortoid, .black_cube {
   display: none;
 }
 
