@@ -99,6 +99,9 @@ section {
         width: 2em;
         margin-top: 5em;
     }
+
+
+
 }
 
 .featured {
@@ -314,22 +317,26 @@ footer {
 
 
     .hero {
-        display: grid;
-        grid-template-columns: 50% auto;
+        display: flex;
+        justify-content: left;
+        overflow: hidden;
 
         .left {
-            display: flex;
-            align-items: center;
+            z-index: 1;
+            display: grid;
+            place-content: center;
 
             .content {
                 text-align: left;
             }
         }
 
-
         .hero-design {
             display: unset;
-            width: 100%;
+            width: 60%;
+            position: absolute;
+            right: 0;
+            top: 2em;
         }
 
         .scroll {

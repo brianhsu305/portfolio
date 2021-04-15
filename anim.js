@@ -7,13 +7,15 @@ tl.from('.hero-content', {
     duration: 2,
     ease: Power4.easeOut  
 })
-tl.from('.stagger1', {
+
+
+tl.from('.hero-design', {
     opacity: 0,
-    y: '-50%',
-    stagger: .3,
+    x: -200,
     ease: Power4.easeOut,
-    duration: 2
-}, '-=2')
+    duration: 3
+}, '-=1')
+
 
 gsap.from('.transition2', {
     scrollTrigger: {
