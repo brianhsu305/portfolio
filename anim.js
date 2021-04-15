@@ -1,20 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
 tl = gsap.timeline();
 
-tl.from('.hero-content', {
+tl.from('.stagger1', {
     y: '-30%',
     opacity: 0,
-    duration: 2,
+    duration: 3,
+    stagger: .3,
     ease: Power4.easeOut  
 })
 
-
-tl.from('.hero-design', {
-    opacity: 0,
-    x: -200,
-    ease: Power4.easeOut,
-    duration: 3
-}, '-=1')
 
 
 gsap.from('.transition2', {
@@ -63,7 +57,7 @@ $('.navbar a').on('click', function(e) {
         const hash = this.hash;
 
         $('html, body').animate({
-            scrollTop: $(hash).offset().top - 100
+            scrollTop: $(hash).offset().top - 80
         },800);
     }
 })
