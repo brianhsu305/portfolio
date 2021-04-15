@@ -107,11 +107,10 @@ section {
 .featured {
     background: #5E416B;
     text-align: center;
-    height: auto;
     padding: 2em;
 
     .subtitle {
-        color: #37FF9F;
+        color: #D3A6E8;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: .3em;
@@ -130,11 +129,18 @@ section {
     .featured-desc {
         line-height: 2em;
         color: #C5C5C5;
+        margin-bottom: 3em;
     }
 
+    .right {
+        margin-top: 3em;
+    }
     img {
-        max-height: 15em;
         box-shadow: .2em .2em .5em black;
+    }
+
+    a:hover {
+        color: #37FF9F;
     }
 
 }
@@ -201,7 +207,6 @@ section {
     background: #5F5F5F;
 
     .desc {
-        font-size: .85em;
         line-height: 2em;
     }
 
@@ -227,9 +232,10 @@ section {
     input[type=text], input[type=email], textarea {
         border-radius: .5em;
         width: 100%;
-        padding: 1em;
+        padding: .5em;
         box-sizing: border-box;
         border: none;
+        font-size: 1.2rem;
     }
     
     input[type=button] {
@@ -244,6 +250,7 @@ section {
         font-weight: bold;
         cursor: pointer;
         -webkit-appearance: none;
+        font-size: 1.2rem;
     }
 }
 
@@ -319,7 +326,7 @@ footer {
     .hero {
         display: flex;
         justify-content: left;
-        overflow: hidden;
+        height: 100vh;
 
         .left {
             z-index: 1;
@@ -328,6 +335,10 @@ footer {
 
             .content {
                 text-align: left;
+
+                p {
+                    font-size: 1.5rem;
+                }
             }
         }
 
@@ -347,19 +358,19 @@ footer {
 
     .featured {
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 60% auto;
+
 
         .left {
-            display: grid;
-            place-content: center;
-            margin-top: -4em;
+            padding-right: 1em;
+            z-index: 3;
         }
+
         .right {
+
             z-index: 2;
-            img {
-                max-height: 100%;
-            }
         }
+
     }
 
     .skills {
@@ -398,13 +409,14 @@ footer {
             display: grid;
             grid-template-columns: 60% auto;
         }
-        .left{
-            display: grid;
-            place-content: center;
+
+        .desc {
+            padding: 2em 2em 2em 0;
+            font-size: 1.2rem;
         }
 
         .right {
-            padding-left: 2em;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -478,12 +490,9 @@ footer {
     }
 
     .nav-container {
-
         a{
             font-size: 1.5em;
         }
-
-
     }
 
 }
