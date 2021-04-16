@@ -302,7 +302,7 @@ section {
   border: none;
 }
 
-.contact input[type=button] {
+.contact input[type=submit] {
   display: block;
   margin: auto;
   background: var(--main-accent-color-400);
