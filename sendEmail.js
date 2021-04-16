@@ -1,5 +1,6 @@
 const send = document.getElementById('contact-form');
 
+emailjs.init("user_C90iwOTsZIXz1u6iQBppj");
 send.addEventListener('submit', (e) => {
     e.preventDefault();
     
