@@ -141,7 +141,8 @@ section {
 
     .featured-desc {
         line-height: 3em;
-        text-align: justify;
+        // text-align: justify;
+        text-align: left;
     }
 
     .right {
@@ -244,7 +245,8 @@ section {
     .desc {
         color: var(--text-color-300);
         line-height: 2em;
-        text-align: justify;
+        // text-align: justify;
+        text-align: left;
     }
 
     img {

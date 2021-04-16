@@ -165,7 +165,7 @@ section {
 
 .featured .featured-desc {
   line-height: 3em;
-  text-align: justify;
+  text-align: left;
 }
 
 .featured .right {
@@ -264,7 +264,7 @@ section {
 .about .desc {
   color: var(--text-color-300);
   line-height: 2em;
-  text-align: justify;
+  text-align: left;
 }
 
 .about img {
