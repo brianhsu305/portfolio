@@ -174,6 +174,7 @@ section {
 .featured img {
   -webkit-box-shadow: .2em .2em .5em black;
           box-shadow: .2em .2em .5em black;
+  border-radius: 1rem;
 }
 
 .skills .title h1 {
