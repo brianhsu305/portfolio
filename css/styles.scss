@@ -320,8 +320,9 @@ footer {
             padding: .7em;
 
             i {
-                font-size: 1.5em;
+                font-size: 1.2rem;
             }
+
             &:hover {
                 i {
                     color: var(--main-accent-color-300);
@@ -366,7 +367,6 @@ footer {
         }
     }
 
-
     .hero {
         display: flex;
         justify-content: left;
@@ -400,12 +400,9 @@ footer {
         display: grid;
         grid-template-columns: 40% auto;
 
-
         .left {
             padding-right: 1em;
         }
-
-
     }
 
     .skills {
@@ -502,27 +499,27 @@ footer {
 
 @media only screen and (min-width: 1000px) {
     .nav-container, .hero, .featured, .skills, .about, .contact {
-        padding: 2em 4em;
+        padding: 1em 4em;
     }
 }
 
 @media only screen and (min-width: 1300px) {
     .nav-container, .hero, .featured, .skills, .about, .contact {
-        padding: 2em 6em;
+        padding: 1em 6em;
     }
 
     h1, .featured a {
         font-size: 3rem;
     }
 
-    header, p, label, input, textarea {
+    p, label, input, textarea {
         font-size: 1.2rem;
     }
 }
 
 @media only screen and (min-width: 1500px) {
     .nav-container, .hero, .featured, .skills, .about, .contact {
-        padding: 2em 8em;
+        padding: 1em 8em;
     }
 }
 
