@@ -1,5 +1,5 @@
 const send = document.getElementById('contact-form');
-const emailkey = config.emailkey;
+const emailkey = 'user_C90iwOTsZIXz1u6iQBppj';
 
 emailjs.init(emailkey);
 send.addEventListener('submit', (e) => {
